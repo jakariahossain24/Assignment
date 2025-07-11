@@ -1,42 +1,188 @@
-/* google-fonts Raleway, Inter */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+.signup-btn {
+    background-color: #00bfff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 0px 5px 1px #0000002b;
+}
+.signup-btn:hover {
+    background-color: #008ecc;
+}
+.main-content {
+    width: 905px;
+    text-align: center;
+    margin: 250px auto 200px auto;
+}
+.main-content h1 {
+    font-size: 4.0625rem;
+    margin-bottom: 30px;
+    color: #000000;
+    font-family: "Raleway", sans-serif;
+}
+.focus-btn {
+    background-color: #00bfff;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px 1px #00000066;
+}
+.focus-btn:hover {
+    background-color: #008ecc;
+}
+/* banner layout css end */
 
-/* Reset some default styles */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-/* Reset box model */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body layout styles start */
-.banner-background {
-    background: url(./Assets/Hero-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.container {
-    width: 1140px;
+/* action layout css start */
+.action-wrapper {
     margin: 0 auto;
-    font-family: 'Segoe UI', sans-serif;
-    padding: 40px 20px;
-}
-/* Body layout styles end */
-
-/* banner layout css start */
-.banner-wrapper {
+    width: 1120px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 60px 20px;
+    color: #000000;
 }
-.logo {
-    color: #00bfff;
-    font-size: 2.125rem;
+.action-left {
+    max-width: 50%;
+}
+.action-left h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-family: 'Raleway';
+    color: black;
+}
+.action-left p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-family: 'Raleway';
+    color: #2524329c;
+    width: 85%;
+}
+.action-left button {
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Raleway';
     font-weight: bold;
-    font-family: "Inter", sans-serif;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 0px 5px 1px #0000006b;
 }
+.action-left button:hover {
+    background-color: #0099cc;
+}
+.right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+.action-right img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgb(0 0 0 / 45%);
+}
+/* action layout css end */
+
+/* productive_user layout css start */
+.productive-wrapper {
+    background-color: #f2efff;
+    padding: 60px 20px;
+    border-radius: 12px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #2c2c2c;
+    text-align: center;
+}
+.productive-wrapper h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 38px;
+    margin: 10px 0 60px 0;
+    font-weight: bold;
+}
+.stats {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.stat-item {
+    flex: 1 1 200px;
+}
+.stat-item .number {
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Inter';
+    color: #5b3ec1;
+}
+.stat-item .label {
+    font-size: 20px;
+    color: #666;
+    margin-top: 8px;
+    font-family: 'Inter';
+}
+/* productive_user layout css end */
+
+/* review layout css start */
+.reviews-section {
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    padding: 60px 0;
+}
+.reviews-title {
+    font-size: 42px;
+    margin-bottom: 40px;
+    color: #5b3ec1;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+}
+.review-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.review-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    flex: 1;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    text-align: left;
+}
+.review-card .stars {
+    color: #f5c518;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.review-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #5b3ec1;
+}
+.review-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+.reviewer {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 0;
