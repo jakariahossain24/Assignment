@@ -1,0 +1,42 @@
+/* google-fonts Raleway, Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* Reset box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body layout styles start */
+.banner-background {
+    background: url(./Assets/Hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px 20px;
+}
+/* Body layout styles end */
+
+/* banner layout css start */
+.banner-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    color: #00bfff;
+    font-size: 2.125rem;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
