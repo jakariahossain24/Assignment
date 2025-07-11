@@ -1,3 +1,46 @@
+
+/* google-fonts Raleway, Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* Reset box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body layout styles start */
+.banner-background {
+    background: url(./Assets/Hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px 20px;
+}
+/* Body layout styles end */
+
+/* banner layout css start */
+.banner-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    color: #00bfff;
+    font-size: 2.125rem;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
 .signup-btn {
     background-color: #00bfff;
     color: #fff;
@@ -186,3 +229,162 @@
     display: flex;
     align-items: center;
     margin: 20px 0 0 0;
+}
+.reviewer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.reviewer span .date {
+    font-size: 14px;
+    color: black;
+}
+/* review layout css end */
+
+/* overflow layout css start */
+.better-focus {
+    background-color: #ece9ff;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.better-focus h1 {
+    font-size: 50px;
+    color: #5b3ec1;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+}
+.cta-btn {
+    background-color: #5b3ec1;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px !important;
+    transition: background-color 0.3s ease;
+    margin: 20px 0;
+    font-family: 'Raleway' !important;
+    box-shadow: 0px 0px 5px 1px #000000a3;
+}
+.cta-btn:hover {
+    background-color: #472b9e;
+    font-size: 16px;
+    /* font-weight: 500; */
+    font-family: "Raleway", sans-serif;
+}
+.overflow-image img {
+    width: 90%;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+/* overflow layout css end */
+
+/* contact layout css start */
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+.contact-left {
+    flex: 1;
+    font-size: 97px;
+    font-weight: bold;
+    color: #4a4aff;
+    padding-right: 40px;
+    font-family: "Raleway", sans-serif;
+}
+.contact-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-right label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 6px;
+    font-family: 'Inter';
+    font-weight: 500;
+}
+.contact-right input,
+.contact-right textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    resize: vertical;
+}
+.contact-right button {
+    padding: 12px;
+    background-color: #4a4aff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contact-right button:hover {
+    background-color: #3a3ae6;
+}
+/* contact layout css end */
+
+/* footer layout css start */
+.footer-wrapper {
+    width: 100%;
+    margin: 80px auto;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    color: #333;
+}
+.footer-logo h2 {
+    font-size: 100px;
+    color: #4a4aff;
+    font-weight: bold;
+    font-family: 'Inter';
+    margin: auto;
+    margin: 20px 0;
+}
+.tagline {
+    font-size: 1rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #4a4aff;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #2f2fff;
+}
+nav.nav ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.nav a {
+    margin: 0px 15px;
+    text-decoration: none;
+}
+
